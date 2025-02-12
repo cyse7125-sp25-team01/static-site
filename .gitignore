@@ -1,0 +1,145 @@
+# Ignore Node modules (if used)
+node_modules/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.log
+*.tmp
+
+# Ignore Docker build artifacts
+*.tar
+*.bak
+*.swp
+
+# Ignore local environment configurations
+.env
+.env.local
+.env.production
+.env.development
+
+# Ignore compiled and cache files
+*.pyc
+__pycache__/
+
+# Ignore Kubernetes YAML output (if generated dynamically)
+*.yaml
+!helm/templates/*.yaml
+
+# Ignore Helm and Kubernetes related files
+helm/release/*
+helm/charts/*
+
+# Ignore OneDrive temp files
+~$*
+
+# Ignore build outputs
+dist/
+build/
+target/
+
+# Ignore Docker-related files
+docker-compose.override.yml
+
+# ==============================
+# General System & Temporary Files
+# ==============================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.tar
+
+# ==============================
+# Node.js (If Used)
+# ==============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==============================
+# Docker Build Files
+# ==============================
+.dockerignore
+docker-compose.override.yml
+docker-compose.yml
+docker-compose*.yml
+
+# ==============================
+# Kubernetes and Helm
+# ==============================
+helm/release/
+helm/charts/
+helm/templates/*.yaml
+*.kubeconfig
+
+# ==============================
+# Python (If Used)
+# ==============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.pytest_cache/
+
+# ==============================
+# IDE - IntelliJ IDEA
+# ==============================
+.idea/
+.idea_modules/
+*.iml
+*.iws
+out/
+*.class
+*.jar
+*.war
+*.ear
+*.ipr
+*.iws
+target/
+logs/
+hs_err_pid*
+atlassian-ide-plugin.xml
+
+# ==============================
+# IDE - VS Code
+# ==============================
+.vscode/
+.vscode/*
+
+# ==============================
+# Environment Variables & Secrets
+# ==============================
+.env
+.env.local
+.env.production
+.env.development
+secrets.yaml
+configmap.yaml
+
+# ==============================
+# Build Artifacts & Binaries
+# ==============================
+dist/
+build/
+bin/
+obj/
+
+# ==============================
+# Java and Maven (If Used)
+# ==============================
+*.class
+target/
+*.jar
+*.war
+*.ear
+*.project
+*.classpath
+*.settings/
