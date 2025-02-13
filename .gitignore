@@ -26,7 +26,6 @@ __pycache__/
 
 # Allow Kubernetes manifests while ignoring Helm-generated files
 *.yaml
-!k8s/*.yaml
 !helm/templates/*.yaml
 
 # Ignore Helm and Kubernetes related files
