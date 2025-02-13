@@ -24,8 +24,9 @@ Thumbs.db
 *.pyc
 __pycache__/
 
-# Ignore Kubernetes YAML output (if generated dynamically)
+# Allow Kubernetes manifests while ignoring Helm-generated files
 *.yaml
+!k8s/*.yaml
 !helm/templates/*.yaml
 
 # Ignore Helm and Kubernetes related files
