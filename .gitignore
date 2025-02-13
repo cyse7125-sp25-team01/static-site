@@ -24,10 +24,6 @@ Thumbs.db
 *.pyc
 __pycache__/
 
-# Allow Kubernetes manifests while ignoring Helm-generated files
-*.yaml
-!helm/templates/*.yaml
-
 # Ignore Helm and Kubernetes related files
 helm/release/*
 helm/charts/*
