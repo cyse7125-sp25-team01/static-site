@@ -24,7 +24,7 @@ Thumbs.db
 *.pyc
 __pycache__/
 
-# Ignore Kubernetes YAML output (if generated dynamically)
+# Allow Kubernetes manifests while ignoring Helm-generated files
 *.yaml
 !helm/templates/*.yaml
 
@@ -122,7 +122,6 @@ atlassian-ide-plugin.xml
 .env.production
 .env.development
 secrets.yaml
-configmap.yaml
 
 # ==============================
 # Build Artifacts & Binaries
