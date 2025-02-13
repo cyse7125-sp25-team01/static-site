@@ -122,7 +122,6 @@ atlassian-ide-plugin.xml
 .env.production
 .env.development
 secrets.yaml
-configmap.yaml
 
 # ==============================
 # Build Artifacts & Binaries
