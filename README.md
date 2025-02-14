@@ -1,1 +1,1 @@
-# static-site-1
+# static-site-2
