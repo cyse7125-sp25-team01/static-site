@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    triggers {
+        githubPush()
+    }
     environment {
         IMAGE_NAME = "saimanasg/static-site"
         TAG = "latest"
