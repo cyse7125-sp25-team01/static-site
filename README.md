@@ -11,8 +11,8 @@ This project sets up a **static website** served using the **Caddy** web server,
 ├── index.html
 ├── Caddyfile
 ├── Dockerfile
-├── Jenkinsfile
-└── README.md
+├── README.md
+└── Jenkinsfile
 ```
 
 ---
