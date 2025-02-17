@@ -6,8 +6,9 @@ pipeline {
 
     environment {
         IMAGE_NAME = "saimanasg/static-site"
-        TAG = "latest"
+        NEXT_VERSION = nextVersion()
         DOCKER_CREDENTIALS_ID = "CloudJenkinsDockerHubPAT"
+        TAG = "${NEXT_VERSION}"
     }
 
     stages {
