@@ -11,23 +11,6 @@ pipeline {
     }
 
     stages {
-        stage('Check If PR Merge') {
-            steps {
-                script {
-                    def commitMessage = sh(script: "git log -1 --pretty=%B", returnStdout: true).trim()
-                    def branch = env.BRANCH_NAME
-
-                    if (branch == "main" && commitMessage.contains("Merge pull request")) {
-                        echo "PR merged into main. Proceeding with the pipeline."
-                    } else {
-                        echo "This is not a merge commit into main. Skipping pipeline execution."
-                        currentBuild.result = 'ABORTED'
-                        error("Pipeline aborted: Not a merge commit into main.")
-                    }
-                }
-            }
-        }
-
         stage('Set up Buildx') {
             steps {
                 script {
