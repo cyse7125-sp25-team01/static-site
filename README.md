@@ -1,4 +1,4 @@
-# 📌 Static Site with Caddy and Jenkins Pipeline
+# 📌 Static Site with Caddy and Jenkins Pipeline..
 
 This project sets up a **static website** served using the **Caddy** web server, containerized with **Docker**, and deployed via a **Jenkins pipeline**. The pipeline builds a **multi-architecture** image and pushes it to **Docker Hub**.
 
